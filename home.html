@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> MOCK EXAMS </title>
+<meta name="viewport" content="width-device-width initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+ <script src="js/jquery-3.2.1.min.js">s</script>
+ <script src="js/boostrap.min.js"> </script>
+<link rel="stylesheet" href="css/w3.css">
+<style>
+#footer {
+    background-color: #81d4fa;
+    padding-top: 10px;
+    padding-bottom: 2px;
+}
+</style>
+</head>
+<body>
+  <h4 class="w3-text-red w3-xxxlarge"><img class="w3-image" src="img/logo.jpg" style="width:10%" >CBT MOCK Examinaion For Senior Secondary School</h4>
+  <h5 class="w3-center"> ...We prepare you for your upcoming exams.</h5>
+  
+  <div class="w3-container w3-black">
+  <h5>
+    <ul class="w3-navbar w3-teal display-right">
+	  
+	  <b>
+	  <li><a href="home.html" class="w3-red">Home</a></li>  
+	  <li><a href="#">About </a></li> 
+	  <li><a href="#">Contact Us</a></li>
+      <li><a href="FAQ.html">FAQ</a></li>	  
+	  </b>
+	</ul>
+ </h5>
+  </div>
+  
+  <div class="w3-content w3-section" style="max-width:700px">
+    <img class="mySlides w3-animate-left" src="img/img3.jpg" style="width:100%">
+	 <img class="mySlides w3-animate-left" src="img/img2.jpg" style="width:100%">
+	  <img class="mySlides w3-animate-left" src="img/img3.jpg" style="width:100%">
+	   <img class="mySlides w3-animate-left" src="img/img4.jpg" style="width:100%">
+	    <img class="mySlides w3-animate-left" src="img/img5.jpg" style="width:100%">
+    
+ </div>
+ 
+ <pre>
+       Welcome,
+	      Here at MOCK, we help you prepare for all exams easily. As a student, we help you take your tests  conveniently or test your knowledge prior to a test to ascertain your strength or weakness. 
+             Also, as a teacher, we help you utilize technology as an evaluation tool with preprogrammed or preset questions and answers so as to ease the manual associated with evaluation especially on a large scale, and still obtain a valid result on your assesments, which is also accessible anywhere	
+          in the world with your internet enabled devices.
+             We look forward to working with you.
+                     Sincerely,
+                        The MOCK team.
+
+ 
+</body>
+</html>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
